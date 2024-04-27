@@ -11,6 +11,9 @@
 		1E8E32932BDDBBEC0008D7CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E32922BDDBBEC0008D7CA /* ContentView.swift */; };
 		1E8E32952BDDBBED0008D7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E32942BDDBBED0008D7CA /* Assets.xcassets */; };
 		1E8E32982BDDBBED0008D7CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E32972BDDBBED0008D7CA /* Preview Assets.xcassets */; };
+		1E8E32A02BDDBC560008D7CA /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8E329F2BDDBC560008D7CA /* SlidingTabView */; };
+		1E8E32A22BDDBECC0008D7CA /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E32A12BDDBECC0008D7CA /* NewsView.swift */; };
+		1E8E32A42BDDBED70008D7CA /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E32A32BDDBED70008D7CA /* StoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		1E8E32922BDDBBEC0008D7CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E8E32942BDDBBED0008D7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E8E32972BDDBBED0008D7CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E8E32A12BDDBECC0008D7CA /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		1E8E32A32BDDBED70008D7CA /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8E32A02BDDBC560008D7CA /* SlidingTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,8 @@
 			children = (
 				1E8E32902BDDBBEC0008D7CA /* SlidingTabsApp.swift */,
 				1E8E32922BDDBBEC0008D7CA /* ContentView.swift */,
+				1E8E32A12BDDBECC0008D7CA /* NewsView.swift */,
+				1E8E32A32BDDBED70008D7CA /* StoreView.swift */,
 				1E8E32942BDDBBED0008D7CA /* Assets.xcassets */,
 				1E8E32962BDDBBED0008D7CA /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = SlidingTabs;
+			packageProductDependencies = (
+				1E8E329F2BDDBC560008D7CA /* SlidingTabView */,
+			);
 			productName = SlidingTabs;
 			productReference = 1E8E328D2BDDBBEC0008D7CA /* SlidingTabs.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 1E8E32842BDDBBEC0008D7CA;
+			packageReferences = (
+				1E8E329E2BDDBC560008D7CA /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = 1E8E328E2BDDBBEC0008D7CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8E32A22BDDBECC0008D7CA /* NewsView.swift in Sources */,
 				1E8E32932BDDBBEC0008D7CA /* ContentView.swift in Sources */,
+				1E8E32A42BDDBED70008D7CA /* StoreView.swift in Sources */,
 				1E8E32912BDDBBEC0008D7CA /* SlidingTabsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E8E329E2BDDBC560008D7CA /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E8E329F2BDDBC560008D7CA /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E8E329E2BDDBC560008D7CA /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E8E32852BDDBBEC0008D7CA /* Project object */;
 }
